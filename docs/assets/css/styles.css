@@ -1,0 +1,103 @@
+.project-width-one-half {
+  width: 50%
+
+}
+
+.project-width-one-quarter {
+  width: 25%
+}
+
+
+.project-width-container {
+  max-width: 960px;
+}
+
+@media (max-width: 960px) {
+    .project-width-container {
+    margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
+    margin-right: max(15px, calc(15px + env(safe-area-inset-left)));
+  }
+}
+
+@media (min-width: 960px) {
+    .project-width-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.project-grid-row {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.project-heading-l {
+  font-size: 3em;
+  text-align: center;
+}
+
+.project-heading-m {
+  font-size: 2em;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  border-top-style: solid;
+  border-top-width: thin;
+  padding-top: 0.5em;
+}
+
+.project-heading-s {
+  font-size: 1.5em;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.project-font {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.project-body {
+  text-align: center;
+}
+
+.project-conference-name {
+  font-style: italic;
+}
+
+.project-authors-list {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-authors-list li {
+  float: left;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.5em;
+  width: 5em;
+}
+
+.project-reference {
+  font-size: 0.75em;
+  vertical-align: super;
+}
+
+.project-affiliations-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-affiliations-list li {
+  text-align: center;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
