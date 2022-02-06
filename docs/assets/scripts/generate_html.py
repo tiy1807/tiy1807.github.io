@@ -39,7 +39,12 @@ for filename in os.listdir("../markdown/"):
             if not in_author_list:
                 content.append(indent('<div class="project-grid-row">', indentation))
                 indentation += 1
-                content.append(indent('<ol class="project-authors-list">', indentation))
+                if line[2] == "u":
+                    content.append(indent('<ul class="project-authors-list">', indentation))
+                    is_ordered = False
+                else:
+                    content.append(indent('<ol class="project-authors-list">', indentation))
+                    is_ordered = True
                 indentation += 1
 
             author_name = line[line.find("[")+1:line.find("]")]
@@ -83,7 +88,10 @@ for filename in os.listdir("../markdown/"):
         elif line.strip() == "":
             if in_author_list:
                 indentation -= 1
-                content.append(indent("</ol>", indentation))
+                if is_ordered:
+                    content.append(indent("</ol>", indentation))
+                else:
+                    content.append(indent("</ul>", indentation))
                 indentation -= 1
                 content.append(indent("</div>", indentation))
             if in_affiliation_list:

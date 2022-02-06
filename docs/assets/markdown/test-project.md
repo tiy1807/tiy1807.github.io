@@ -12,8 +12,8 @@ affiliation2. Department, University
 affiliation3. Department3, University
 affiliation4. Another department, second university
 
-*A [Paper](https://google.com)
-*A [Code](https://google.com)
+*Au [Paper](https://google.com)
+*Au [Code](https://google.com)
 
 ![This is alternative text](docs/assets/images/holding-picture.png)
 
